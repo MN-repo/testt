@@ -11,7 +11,7 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 variables:
-- group: SFVAR
+- env: testenv
 steps:
 - task: UsePythonVersion@0
   displayName: 'Use Python 3.8.x'
